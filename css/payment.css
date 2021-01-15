@@ -1,0 +1,214 @@
+.side {
+	width: 70px;
+	border: 1px solid gray;
+	position: fixed;
+	right: 0;
+	bottom: 150px;
+	background-color: white;
+}
+#customer .img {
+	width: 55px;
+	height: 55px;
+	background: url(../img/side.png);
+	background-position: 840px 0;
+}
+#getTop {
+	margin-bottom: 10px;
+	display: none;
+}
+#getTop .img {
+	width: 55px;
+	height: 55px;
+	background: url(../img/side.png);
+	background-position: 770px 0;
+}
+.side .content {
+	font-size: 12px;
+	text-align: center;
+	margin-top: 5px;
+	color: gray;
+	letter-spacing: 0.3px;
+	font-family: "黑体";
+}
+#wrapper {
+	margin-top: 150px;
+}
+#wrapper .container>div {
+	float: left;
+}
+#wrapper .container::after {
+	display: block;
+	height: 0;
+	clear: both;
+	content: "";
+}
+#wrapper .left {
+	width: 800px;
+	margin-right: 30px;
+}
+#wrapper .left .payment_title {
+	width: 100%;
+	display: flex;
+}
+#wrapper .left .payment_title .payment_word {
+	width: 80px;
+	font-size: 19px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	margin-right: 30px;
+}
+#wrapper .payment_title .paymen_solid {
+	width: calc(100% - 150px);
+	height: 0;
+	border: 1px solid #9CA0A0;
+	margin-top: 13px;
+}
+#wrapper .mode {
+	padding: 30px 0;
+}
+#wrapper .mode li {
+	display: flex;
+	margin-bottom: 15px;
+}
+#wrapper .mode .circle:hover {
+	cursor: pointer;
+}
+#wrapper .mode #mode_change {
+	background-color: seagreen;
+}
+#wrapper .mode .circle {
+	width: 18px;
+	height: 18px;
+	border: 1px solid #9CA0A0;
+	border-radius: 50%;
+	margin-right: 15px;
+}
+#wrapper .mode .mode_name {
+	color: rgb(89, 88, 88);
+	font-size: 16px;
+	font-weight: 700;
+	margin-right: 10px;
+	letter-spacing: 2px;
+}
+#wrapper .mode .mode_zhifubao {
+	width: 28px;
+	height: 24px;
+	background: url(../img/pay-icon.png);
+	background-position: -40px 0;
+	position: relative;
+	bottom: 3px;
+}
+#wrapper .mode .mode_vx {
+	width: 28px;
+	height: 24px;
+	background: url(../img/pay-icon.png);
+	background-position: -40px -60px;
+	position: relative;
+	bottom: 3px;
+}
+#wrapper .mode .mode_huabei {
+	width: 28px;
+	height: 24px;
+	background: url(../img/pay-icon.png);
+	background-position: -40px 30px;
+	position: relative;
+	bottom: 3px;
+}
+#wrapper .payment_money .payment_content {
+	margin-top: 30px;
+	margin-left: 30px;
+	display: none;
+}
+#wrapper .payment_money #pay_content {
+	display: block;
+}
+#wrapper .payment_money .payment_content .price {
+	font-weight: 600;
+	font-size: 22px;
+	letter-spacing: 1px;
+}
+#wrapper .payment_money .payment_content .payment_btn {
+	background-color: #000000;
+	color: white;
+	display: inline-block;
+	margin-top: 15px;
+	font-size: 17px;
+	letter-spacing: 1px;
+	padding: 15px 40px;
+}
+#wrapper .payment_money .payment_content .payment_btn:hover {
+	cursor: pointer;
+	opacity: 0.8;
+}
+#wrapper .payment_money .payment_content .QR_code {
+	width: 270px;
+	border: 1px solid gray;
+	margin-top: 20px;
+}
+#wrapper .payment_money .payment_content .QR_code p {
+	font-size: 13px;
+	font-weight: 600;
+	color: #505050;
+	letter-spacing: 1px;
+	margin: 10px 0;
+}
+#wrapper .right {
+	width: calc(100% - 830px);
+}
+#wrapper .right_title {
+	width: 100%;
+	display: flex;
+}
+#wrapper .right_title .word {
+	width: 80px;
+	font-size: 19px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	margin-right: 30px;
+	color: rgb(112, 112, 112);
+}
+#wrapper .right_title .solid {
+	border: 1px solid #9CA0A0;
+	margin-top: 13px;
+	height: 0;
+	width: calc(100% - 115px);
+}
+#wrapper .post_information {
+	display: flex;
+}
+#wrapper .post_information .post_img img {
+	height: 80px;
+	margin-right: 20px;
+}
+#wrapper .information {
+	padding: 20px 0;
+}
+#wrapper .post_information .post_title {
+	font-size: 12px;
+	font-weight: 600;
+	color: rgb(97, 97, 97);
+	letter-spacing: 1px;
+	margin-top: 10px;
+}
+#wrapper .post_information .post_count {
+	font-size: 13px;
+	margin-top: 5px;
+	color: rgb(97, 97, 97);
+}
+#wrapper .post_address {
+	color: rgb(97, 97, 97);
+	font-size: 12px;
+	letter-spacing: 1px;
+	padding: 20px 0;
+}
+#wrapper .yn {
+	padding: 20px 0;
+	font-size: 12px;
+	letter-spacing: 1px;
+	font-weight: 600;
+}
+#wrapper .post_remarks {
+	font-size: 12px;
+	padding: 20px 0;
+	letter-spacing: 1px;
+}

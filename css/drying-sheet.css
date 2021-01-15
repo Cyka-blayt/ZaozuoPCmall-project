@@ -1,0 +1,88 @@
+body,html {
+	background-color: rgb(246,246,246);
+}
+.person-nav {
+	border-bottom: 1px solid black;
+}
+#ds-content {
+	margin-top: 50px;
+	margin-bottom: 400px;
+}
+#ds-content .right {
+	float: right;
+}
+#ds-content .right p {
+	margin-top: 5px;
+	text-align: center;
+	font-size: 13px;
+	font-weight: 300;
+	line-height: 1.5;
+	letter-spacing: 1px;
+}
+#ds-content .word1 {
+	font-size: 28px;
+	font-weight: 100;
+	letter-spacing: 1px;
+}
+#ds-content .word2 {
+	font-size: 18px;
+	font-weight: 100;
+	letter-spacing: 1px;
+	margin-top: 10px;
+}
+#ds-content .welfare {
+	margin-top: 50px;
+	display: flex;
+}
+#ds-content .welfare>div {
+	width: 335px;
+	padding-right: 40px;
+}
+#ds-content .welfare .welfare1 {
+	border-right: 1px solid gray;
+}
+#ds-content .welfare .welfare2 {
+	margin-left: 30px;
+}
+#ds-content .welfare .title {
+	border-bottom: none;
+	font-size: 18px;
+}
+#ds-content .welfare p {
+	font-size: 13px;
+	letter-spacing: 2px;
+	line-height: 1.5;
+}
+
+.side {
+	width: 70px;
+	border: 1px solid gray;
+	position: fixed;
+	right: 0;
+	bottom: 150px;
+	background-color: white;
+}
+#customer .img {
+	width: 55px;
+	height: 55px;
+	background: url(../img/side.png);
+	background-position: 840px 0;
+}
+#getTop {
+	margin-bottom: 10px;
+	display: none;
+}
+#getTop .img {
+	width: 55px;
+	height: 55px;
+	background: url(../img/side.png);
+	background-position: 770px 0;
+}
+.side .content {
+	font-size: 12px;
+	text-align: center;
+	margin-top: 5px;
+	color: gray;
+	letter-spacing: 0.3px;
+	font-family: "黑体";
+}

@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>订单确认</title>
+		<script src="js/region.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/settlement.css" />
+		<link rel="icon" type="image/x-icon" href="./img/logo.ico" />
+		<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="header-nav">
+			<div class="img">
+				<img src="img/logo.png">
+				<i></i>
+			</div>
+			<div class="nav">
+				<ul id="fixed-ul">
+					<li><a href="index.html">首页</a></li>
+					<li>
+						<a href="quanwu-list.html">全屋系列</a>
+						<ul class="fixed-underul">
+							<a href="">
+								<li>全部</li>
+							</a>
+							<a href="">
+								<li>美术馆系列</li>
+							</a>
+							<a href="">
+								<li>画板系列</li>
+							</a>
+							<a href="">
+								<li>山雪系列</li>
+							</a>
+							<a href="">
+								<li>青山系列</li>
+							</a>
+							<a href="">
+								<li>cosmo系列</li>
+							</a>
+							<a href="">
+								<li>朱雀系列</li>
+							</a>
+						</ul>
+					</li>
+					<li>
+						<a href="">沙发·椅凳</a>
+						<ul class="fixed-underul">
+							<a href="">
+								<li>全部</li>
+							</a>
+							<a href="">
+								<li>沙发</li>
+							</a>
+							<a href="">
+								<li>休闲椅</li>
+							</a>
+							<a href="">
+								<li>椅凳</li>
+							</a>
+							<a href="">
+								<li>坐墩</li>
+							</a>
+						</ul>
+					</li>
+					<li>
+						<a href="">柜架</a>
+						<ul class="fixed-underul">
+							<a href="">
+								<li>全部</li>
+							</a>
+							<a href="">
+								<li>电视柜</li>
+							</a>
+							<a href="">
+								<li>书柜·书架</li>
+							</a>
+							<a href="">
+								<li>衣柜</li>
+							</a>
+							<a href="">
+								<li>餐边柜</li>
+							</a>
+							<a href="">
+								<li>斗柜</li>
+							</a>
+							<a href="">
+								<li>鞋柜</li>
+							</a>
+							<a href="">
+								<li>玄关柜</li>
+							</a>
+							<a href="">
+								<li>床头柜</li>
+							</a>
+							<a href="">
+								<li>推车</li>
+							</a>
+							<a href="">
+								<li>置物架·储物格</li>
+							</a>
+							<a href="">
+								<li>衣帽架</li>
+							</a>
+						</ul>
+					</li>
+					<li>
+						<a href="">床·床具</a>
+						<ul class="fixed-underul">
+							<a href="">
+								<li>全部</li>
+							</a>
+							<a href="">
+								<li>床</li>
+							</a>
+							<a href="">
+								<li>床垫</li>
+							</a>
+							<a href="">
+								<li>床头柜</li>
+							</a>
+							<a href="">
+								<li>床尾凳</li>
+							</a>
+							<a href="">
+								<li>床品</li>
+							</a>
+							<a href="">
+								<li>被褥</li>
+							</a>
+							<a href="">
+								<li>枕芯</li>
+							</a>
+						</ul>
+					</li>
+					<li>
+						<a href="">桌几</a>
+						<ul class="fixed-underul">
+							<a href="">
+								<li>全部</li>
+							</a>
+							<a href="">
+								<li>餐桌·书桌</li>
+							</a>
+							<a href="">
+								<li>茶几</li>
+							</a>
+							<a href="">
+								<li>边桌</li>
+							</a>
+							<a href="">
+								<li>梳妆台</li>
+							</a>
+						</ul>
+					</li>
+					<li>
+						<a href="">灯具</a>
+						<ul class="fixed-underul">
+							<a href="">
+								<li>全部</li>
+							</a>
+							<a href="">
+								<li>地灯</li>
+							</a>
+							<a href="">
+								<li>吊灯</li>
+							</a>
+							<a href="">
+								<li>台灯</li>
+							</a>
+							<a href="">
+								<li>吸顶灯</li>
+							</a>
+							<a href="">
+								<li>夜灯</li>
+							</a>
+						</ul>
+					</li>
+					<li>
+						<a href="">家纺·床品</a>
+						<ul class="fixed-underul">
+							<a href="">
+								<li>全部</li>
+							</a>
+							<a href="">
+								<li>床品</li>
+							</a>
+							<a href="">
+								<li>被褥</li>
+							</a>
+							<a href="">
+								<li>枕芯</li>
+							</a>
+							<a href="">
+								<li>毛巾·浴巾</li>
+							</a>
+							<a href="">
+								<li>盖毯</li>
+							</a>
+							<a href="">
+								<li>地毯·地垫</li>
+							</a>
+							<a href="">
+								<li>抱枕·颈枕</li>
+							</a>
+							<a href="">
+								<li>围巾</li>
+							</a>
+						</ul>
+					</li>
+					<li>
+						<a href="">装饰·收纳</a>
+						<ul class="fixed-underul">
+							<a href="">
+								<li>全部</li>
+							</a>
+							<a href="">
+								<li>墙镜</li>
+							</a>
+							<a href="">
+								<li>花瓶</li>
+							</a>
+							<a href="">
+								<li>摆件</li>
+							</a>
+							<a href="">
+								<li>收纳</li>
+							</a>
+							<a href="">
+								<li>装饰画</li>
+							</a>
+						</ul>
+
+					</li>
+					<li>
+						<a href="">餐具·水具</a>
+						<ul class="fixed-underul">
+							<a href="">
+								<li>全部</li>
+							</a>
+							<a href="">
+								<li>餐具</li>
+							</a>
+							<a href="">
+								<li>杯子</li>
+							</a>
+							<a href="">
+								<li>托盘·果盘</li>
+							</a>
+							<a href="">
+								<li>食品储物</li>
+							</a>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="learn">
+				<ul>
+					<li><i class="fa fa-map-marker" aria-hidden="true"></i><a href="">实体店</a></li>
+					<li><a href="">了解造作新家</a></li>
+					<li><a href="">商业合作</a></li>
+					<li style="position: relative;width: 25px;height: 20px;" id="pw">
+						<img src="img/w-p.png" width="25px" class="learn-pw">
+						<img src="img/w-p-2.png" width="25px" class="learn-pb">
+					</li>
+					<li style="position: relative;width: 25px;height: 20px;" id="sw">
+						<img src="img/w-s-1.png" width="25px" class="learn-sw">
+						<img src="img/w-s-2.png" width="25px" class="learn-sb">
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="address">
+			<div class="container">
+				<div class="settle_title">
+					<span>收货地址</span>
+				</div>
+				<div class="flex">
+					<div class="add">
+						<div class="content_add">
+							<div class="settle_circle">+</div>
+							<div class="settle_words">
+								添加收货地址
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="wrapper_address">
+			<div id="window_address">
+				<span class="shut_down">x</span>
+				<div class="container_form">
+
+					<form id="Form1" method="post" runat="server">
+						<FONT face="宋体">
+						</FONT>
+						<div class="ress_title">
+							添加收货地址
+						</div>
+						<P>
+							<font face="宋体">
+								<SELECT id="province" runat="server" NAME="province">
+								</SELECT>
+								<SELECT id="city" runat="server" NAME="city">
+								</SELECT>
+								<SELECT id="county" runat="server" NAME="city" style="margin-right: 0;">
+								</SELECT>
+							</font>
+						</P>
+
+						<!--js初始化函数-->
+						<SCRIPT language="javascript">
+							setup()
+					</SCRIPT>
+						<p>
+							<input type="text" name="road" placeholder="详细地址" id="ress">
+						</p>
+						<div class="ress_title" style="margin-top: 20px;">
+							添加收货人信息
+						</div>
+						<p>
+							<input type="text" name="" id="user_name" value="" placeholder="收货人姓名" />
+							<input type="text" name="" id="user_phone" value="" placeholder="收货人手机号" />
+						</p>
+						<P class="checkbox_words">
+							<input type="checkbox" name="" id="" value="" class="ress_check" />
+							<span>设为默认地址</span>
+						</P>
+						<p>
+							<input type="button" name="submit" value="保存并使用" id="submit">
+						</p>
+
+					</form>
+				</div>
+			</div>
+		</div>
+		<div id="error_banner">
+			<div class="error">
+				<div class="error_words">
+
+				</div>
+			</div>
+		</div>
+		<!-- 分割线 -->
+		<div class="excessive">
+
+		</div>
+
+		<!-- 商品清单 -->
+		<div class="detailed">
+			<div class="container">
+				<div class="settle_title">
+					商品清单
+				</div>
+				<div class="title">
+					单品
+				</div>
+				<!-- <div class="settle_content">
+					<div class="settle_img">
+						<img src="img/details-banner01.png" height="170px">
+					</div>
+					<div class="settle_ns">
+						<p class="settle_name">美术馆茶几</p>
+						<p class="settle_style">长款</p>
+					</div>
+					<div class="settle_time">
+						<span>预计2020-11-16前发货</span>
+					</div>
+					<div class="settle_price">
+						<span>￥2222</span>
+					</div>
+					<div class="settle_count">
+						<span>x1</span>
+					</div>
+				</div> -->
+			</div>
+		</div>
+		<div class="excessive">
+
+		</div>
+		<!-- 发票信息 -->
+		<div class="invoice">
+			<div class="container">
+				<div class="settle_title">
+					发票信息
+				</div>
+				<div class="change_invoice">
+					<div class="fangkuai">
+						<img src="img/yes-white.png" width="100%">
+					</div>
+					<div class="invoice_word">
+						我要开发票
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="excessive">
+
+		</div>
+		<!-- 订单备注 -->
+		<div class="remarks">
+			<div class="container">
+				<div class="settle_title">
+					订单备注
+				</div>
+				<div>
+					<textarea rows="10" cols="50" placeholder="在此处添加备注"></textarea>
+				</div>
+			</div>
+		</div>
+		<div class="excessive">
+
+		</div>
+		<!-- 结算 -->
+		<div class="total_price">
+			<div class="container">
+				<div class="content">
+					<ul>
+						<li>
+							<span class="count_" align='right'>商品合计</span>
+							<span id="count_price" class="count_right"></span>
+						</li>
+						<li>
+							<span class="count_" align='right'>运费</span>
+							<span id="count_freight" class="count_right">免邮</span>
+						</li>
+						<li>
+							<span class="count_" align='right'>实付</span>
+							<span id="count_actual" class="count_right"></span>
+						</li>
+					</ul>
+					<div>
+						<div class="check_green">
+							<img src="img/yes-white.png" width="100%">
+						</div>
+						<div class="word">
+							我已同意<span class="green">《造作物流及售后协议》</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 协议未勾选报错 -->
+		<div class="rule_error">
+			<div>
+				<p>
+					您需要阅读并同意<br>
+					《造作物流及售后协议》
+				</p>
+			</div>
+		</div>
+		<!-- 未选择地址时报错 -->
+		<div id="ress_error">
+			<div>
+				未选择收货地址
+			</div>
+		</div>
+		<!-- 固定好的结算 -->
+		<div class="fixed_bottom">
+			<div class="container">
+				<div class="fixed_right">
+					<div class="fr_word">
+						实付：
+					</div>
+					<div class="fr_price">
+
+					</div>
+					<div class="fixed_btn">
+						结算
+					</div>
+				</div>
+				<div class="fixed_ress">
+					<div>
+						寄送至：
+					</div>
+					<div class="post_information">
+						<p class="p1">
+							<span class="f_name"></span>
+							<span class="f_phone"></span>
+						</p>
+						<p class="p2">
+							<span class="f_ress"></span>
+						</p>
+					</div>
+					<div class="f_province"></div>
+					<div class="f_city"></div>
+					<div class="f_county"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer">
+			<div class="container">
+				<div class="container-s">
+					<div class="top">
+						<div class="lft">
+							<div class="img">
+								<img src="img/footer-logo.png">
+							</div>
+							<div class="word">zaozuo.com</div>
+							<div class="icon">
+								<div class="weixin-logo">
+									<img src="img/wx-logo-w.png" width="20px" class="white">
+									<img src="img/wx-logo-b.png" width="20px" class="black">
+								</div>
+								<div class="xinlang-logo">
+									<img src="img/xl-logo-w.png" width="20px" class="white">
+									<img src="img/xl-logo-b.png" width="20px" class="black">
+								</div>
+							</div>
+						</div>
+						<div class="cet">
+							<div>
+								<div>关于造作新家</div>
+								<ul>
+									<li><a href="">团队介绍</a></li>
+									<li><a href="">设计师团</a></li>
+									<li><a href="">媒体报道</a></li>
+									<li><a href="">加入造作新家</a></li>
+									<li><a href="">Designer Hiring</a></li>
+								</ul>
+							</div>
+							<div>
+								<div>服务支持</div>
+								<ul>
+									<li><a href="">服务保障</a></li>
+									<li><a href="">用户协议</a></li>
+									<li><a href="">物流售后服务</a></li>
+								</ul>
+							</div>
+							<div>
+								<div>商业合作</div>
+								<ul>
+									<li><a href="">集合采购</a></li>
+									<li><a href="">伙伴加盟</a></li>
+									<li><a href="">品牌合作</a></li>
+									<li><a href="">媒体合作</a></li>
+									<li><a href="">设计师驻入</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="rgt">
+							<div class="r-t">联系我们</div>
+							<div class="num">400-6636-926&nbsp; &nbsp;&nbsp;<span class="time">（9:00~21:00）</span></div>
+							<a href=""><span class="customer">在线客服</span></a><br>
+							<input type="submit" name="" id="" value="造作新家全国实体店&nbsp;>" />
+						</div>
+					</div>
+					<div class="btm">
+						<div>Copyright © 2018 zaozuo.com Inc.All Rights Reserved. 北京造化科技有限公司</div>
+						<div>版权所有 京ICP备14049641号-1 增值电信业务经营许可证：京ICP证150098号</div>
+						<div>造作新家官网-全球设计师创作家居品牌</div>
+						<div>营业执照</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="side">
+			<div id="customer">
+
+				<div class="img">
+
+				</div>
+
+				<div class="content">
+					客服<br>
+				</div>
+			</div>
+
+			<div id="getTop">
+				<div class="img">
+
+				</div>
+				<div class="content">
+					回顶部
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/shop_cart.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/reset.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/settlement.js" type="text/javascript" charset="utf-8"></script>
+</html>

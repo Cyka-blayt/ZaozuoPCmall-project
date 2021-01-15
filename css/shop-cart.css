@@ -1,0 +1,224 @@
+body ,html {
+	background-color: rgb(246,246,246);
+}
+.side {
+	width: 70px;
+	border: 1px solid gray;
+	position: fixed;
+	right: 0;
+	bottom: 150px;
+	background-color: white;
+}
+#customer .img {
+	width: 55px;
+	height: 55px;
+	background: url(../img/side.png);
+	background-position: 840px 0;
+}
+#getTop {
+	margin-bottom: 10px;
+	display: none;
+}
+#getTop .img {
+	width: 55px;
+	height: 55px;
+	background: url(../img/side.png);
+	background-position: 770px 0;
+}
+.side .content {
+	font-size: 12px;
+	text-align: center;
+	margin-top: 5px;
+	color: gray;
+	letter-spacing: 0.3px;
+	font-family: "黑体";
+}
+.wrapper {
+	display: none;
+}
+.wrapper .container {
+	padding: 150px 0;
+}
+.wrapper .container .pic {
+	width: 189px;
+	height: 189px;
+	background: url(../img/personal.png);
+	background-position: 445px;
+	margin: 0 auto;
+}
+.wrapper .container p {
+	color: #c4c3c3;
+	font-size: 20px;
+	letter-spacing: 1.5px;
+	margin-top: 30px;
+	text-align: center;
+}
+.shop-wrapper {
+	margin-bottom: 400px;
+}
+.shop-wrapper .container {
+	margin-top: 100px;
+	background-color: white;
+}
+#goods {
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+#goods .title {
+	border-bottom: 3px solid rgb(246,246,246);
+}
+#goods .checkbox input {
+	width: 20px;
+	height: 20px;
+}
+#goods .items_name {
+	/* display: flex;
+	flex-direction: column;
+	justify-content: center; */
+}
+#goods .items_name .name {
+	font-size: 16px;
+	font-weight: 600;
+	letter-spacing: 2px;
+}
+#goods .items_name .style {
+	font-size: 13px;
+	font-weight: 400;
+	margin-top: 5px;
+	letter-spacing: 2px;
+}
+#goods .time {
+	position: relative;
+	left: 100px;
+}
+#goods .time span {
+	font-size: 13px;
+	letter-spacing: 1px;
+}
+#goods .price {
+	position: relative;
+	left: 170px;
+}
+#goods .price .price_new {
+	font-size: 16px;
+	font-weight: 600;
+}
+#goods .price .price_old {
+	color: #9CA0A0;
+	font-size: 14px;
+	margin-top: 5px;
+}
+#goods .count {
+	position: relative;
+	left: 300px;
+}
+#goods .count div {
+	border: 1px solid gray;
+}
+#goods .count div>span {
+	padding: 0 8px;
+}
+#goods .count .num_minus {
+	border-right: 1px solid gray;
+	font-size: 20px;
+}
+#goods .count .num_minus:hover {
+	cursor: pointer;
+}
+#goods .count .num {
+	font-size: 14px;
+}
+#goods .count .num_plus {
+	border-left: 1px solid gray;
+	font-size: 20px;
+}
+#goods .count .num_plus:hover {
+	cursor: pointer;
+}
+#goods .remove {
+	position: relative;
+	left: 380px;
+	color: #1B1B1B;
+	font-size: 14px;
+}
+#goods .remove span:hover {
+	font-weight: bold;
+	cursor: pointer;
+}
+.settle {
+	background-color: white;
+	border-top: 1px solid gray;
+	padding: 20px 0;
+	margin-top: 150px;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+.settle .container {
+	margin-top: 0;
+	display: flex;
+	justify-content: space-between;
+	height: 80px;
+}
+.settle .left {
+	margin-top: 30px;
+	display: flex;
+}
+.settle .left input {
+	width: 20px;
+	height: 20px;
+}
+.settle .left .word_1 {
+	margin-left: 15px;
+	letter-spacing: 1px;
+}
+.settle .left .cut {
+	padding: 0 15px;
+	color: #9CA0A0;
+}
+.settle .left .word_2 {
+	color: #9CA0A0;
+	letter-spacing: 1px;
+}
+.settle .right {
+	display: flex;
+	margin-top: 20px;
+}
+.settle .right .price>div {
+	letter-spacing: 2px;
+	color: #9CA0A0;
+	font-size: 16px;
+	padding-right: 30px;
+	border-right: 1px solid #9CA0A0;
+}
+.settle .right .price .item_discount {
+	margin-top: 5px;
+}
+.settle .right .item_actual {
+	margin-left: 30px;
+	font-size: 16px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	margin-right: 80px;
+}
+.settle .right .item_btn span {
+	display: inline-block;
+	background-color: #000000;
+	color: white;
+	font-weight: 700;
+	font-size: 18px;
+	letter-spacing: 2px;
+	padding: 20px 70px;
+	margin-top: -12px;
+}
+.settle .right .item_btn span:hover {
+	opacity: 0.8;
+	cursor: pointer;
+}
+.footer {
+	margin-top: 0;
+}
+.arrImg img {
+	height: 170px;
+}

@@ -1,0 +1,108 @@
+body,html {
+	background-color: rgb(246,246,246);
+}
+.person-nav {
+	border-bottom: 1px solid black;
+}
+.if-payment {
+	margin-top: 30px;
+}
+.if-payment .container {
+	background-color: white;
+	position: relative;
+}
+.if-payment .tips {
+	position: absolute;
+	color: gray;
+	border: 2px solid gray;
+	border-radius: 50%;
+	width: 15px;
+	height: 15px;
+	text-align: center;
+	line-height: 15px;
+	top: 18px;
+	left: 400px;
+}
+.if-payment .tips:hover {
+	color: #000000;
+	border: 2px solid black;
+}
+.if-payment .tips-content {
+	width: 400px;
+	font-size: 14px;
+	line-height: 1.5;
+	background-color: #000000;
+	color: white;
+	padding: 15px;
+	position: absolute;
+	display: none;
+}
+.if-payment li {
+	display: inline-block;
+	letter-spacing: 1px;
+	font-size: 13px;
+	padding: 20px;
+	color: black;
+}
+.if-payment li:hover {
+	cursor: pointer;
+}
+.if-payment .active {
+	color: #60B688;
+}
+.wrapper .container {
+	padding: 150px 0;
+}
+.wrapper .container .pic {
+	width: 189px;
+	height: 189px;
+	background: url(../img/personal.png);
+	background-position: 445px;
+	margin: 0 auto;
+}
+.wrapper .container p {
+	color: #c4c3c3;
+	font-size: 20px;
+	letter-spacing: 1.5px;
+	margin-top: 30px;
+	text-align: center;
+}
+.wrapper .container {
+	display: none;
+}
+#content {
+	display: block;
+}
+
+.side {
+	width: 70px;
+	border: 1px solid gray;
+	position: fixed;
+	right: 0;
+	bottom: 150px;
+	background-color: white;
+}
+#customer .img {
+	width: 55px;
+	height: 55px;
+	background: url(../img/side.png);
+	background-position: 840px 0;
+}
+#getTop {
+	margin-bottom: 10px;
+	display: none;
+}
+#getTop .img {
+	width: 55px;
+	height: 55px;
+	background: url(../img/side.png);
+	background-position: 770px 0;
+}
+.side .content {
+	font-size: 12px;
+	text-align: center;
+	margin-top: 5px;
+	color: gray;
+	letter-spacing: 0.3px;
+	font-family: "黑体";
+}

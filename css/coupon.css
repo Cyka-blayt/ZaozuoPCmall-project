@@ -1,0 +1,154 @@
+body,html {
+	background-color: rgb(246,246,246);
+}
+.person-nav {
+	border-bottom: 1px solid black;
+}
+.coupon {
+	margin-top: 30px;
+}
+.coupon .container {
+	background-color: white;
+	position: relative;
+}
+.coupon li {
+	display: inline-block;
+	letter-spacing: 1px;
+	font-size: 13px;
+	padding: 20px;
+	color: black;
+}
+.coupon li:hover {
+	cursor: pointer;
+}
+.coupon .active {
+	color: #60B688;
+}
+#coupon-content {
+	margin-top: 30px;
+	height: 400px;
+}
+
+#coupon-content .container {
+	display: none;
+}
+#coupon-content .top .tips {
+	float: right;
+	color: green;
+	position: relative;
+	letter-spacing: 1px;
+}
+#coupon-content .top .tips .tips-content {
+	position: absolute;
+	right: 0;
+	width: 600px;
+	color: white;
+	background-color: #000000;
+	padding: 20px;
+	display: none;
+}
+#coupon-content .top .tips .tips-content p {
+	margin-bottom: 10px;
+	font-size: 14px;
+}
+#coupon-content #content {
+	display: block;
+}
+#coupon-content .top .kahao {
+	outline: none;
+	padding: 10px;
+	border: 1px solid rgb(226, 217, 210);
+	margin-right: 10px;
+}
+#coupon-content .top .duihuan {
+	width: 205px;
+	outline: none;
+	padding: 10px;
+	border: 1px solid rgb(226, 217, 210);
+}
+#coupon-content .top .bt {
+	display: inline-block;
+	background-color: #000000;
+	color: white;
+	padding: 8px 8px 10px 8px;
+	margin-left: 10px;
+	font-size: 14px;
+}
+#coupon-content .top .bt:hover {
+	opacity: 0.8;
+	cursor: pointer;
+}
+#coupon-content .bottom {
+	margin-top: 100px;
+}
+#coupon-content .bottom p {
+	text-align: center;
+	margin-bottom: 30px;
+	font-size: 13px;
+	letter-spacing: 1px;
+	color: #A5A5A5;
+}
+.side {
+	width: 70px;
+	border: 1px solid gray;
+	position: fixed;
+	right: 0;
+	bottom: 150px;
+	background-color: white;
+}
+#customer .img {
+	width: 55px;
+	height: 55px;
+	background: url(../img/side.png);
+	background-position: 840px 0;
+}
+#getTop {
+	margin-bottom: 10px;
+	display: none;
+}
+#getTop .img {
+	width: 55px;
+	height: 55px;
+	background: url(../img/side.png);
+	background-position: 770px 0;
+}
+.side .content {
+	font-size: 12px;
+	text-align: center;
+	margin-top: 5px;
+	color: gray;
+	letter-spacing: 0.3px;
+	font-family: "黑体";
+}
+.tips_wrapper {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	background-color: rgba(0,0,0,0.5);
+	display: none;
+}
+.tips_wrapper .tips_content {
+	width: 400px;
+	height: 200px;
+	background-color: white;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	text-align: center;
+	line-height: 200px;
+	letter-spacing: 1px;
+	font-weight: 700;
+	font-size: 18px;
+}
+.tips_wrapper .tips_content .close {
+	float: right;
+	margin-right: 5px;
+	line-height: 1;
+}
+.tips_wrapper .tips_content .close:hover {
+	cursor: pointer;
+}

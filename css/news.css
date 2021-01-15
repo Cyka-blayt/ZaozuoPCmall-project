@@ -1,0 +1,57 @@
+body,html {
+	background-color: rgb(246,246,246);
+}
+.person-nav {
+	border-bottom: 1px solid black;
+}
+
+.wrapper .container {
+	padding: 150px 0;
+}
+.wrapper .container .pic {
+	width: 189px;
+	height: 189px;
+	background: url(../img/personal.png);
+	background-position: -705px;
+	margin: 0 auto;
+}
+.wrapper .container p {
+	color: #c4c3c3;
+	font-size: 20px;
+	letter-spacing: 1.5px;
+	margin-top: 30px;
+	text-align: center;
+}
+
+.side {
+	width: 70px;
+	border: 1px solid gray;
+	position: fixed;
+	right: 0;
+	bottom: 150px;
+	background-color: white;
+}
+#customer .img {
+	width: 55px;
+	height: 55px;
+	background: url(../img/side.png);
+	background-position: 840px 0;
+}
+#getTop {
+	margin-bottom: 10px;
+	display: none;
+}
+#getTop .img {
+	width: 55px;
+	height: 55px;
+	background: url(../img/side.png);
+	background-position: 770px 0;
+}
+.side .content {
+	font-size: 12px;
+	text-align: center;
+	margin-top: 5px;
+	color: gray;
+	letter-spacing: 0.3px;
+	font-family: "黑体";
+}

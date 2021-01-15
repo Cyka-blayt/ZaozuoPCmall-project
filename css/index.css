@@ -1,0 +1,660 @@
+#header-nav {
+	background-color: #313131;
+	height: 50px;
+	position: fixed;
+	top: 0;
+	z-index: 100;
+	display: none;
+	width: 100%;
+}
+#header-nav::after {
+	content: "";
+	display: block;
+	height: 0;
+	clear: both;
+}
+#header-nav .img {
+	position: relative;
+	width: 30px;
+	height: 100%;
+	float: left;
+	margin-left: 60px;
+}
+#header-nav .img img {
+	position: absolute;
+	top: 20%;
+}
+#header-nav .nav {
+	float: left;
+	margin-left: 30px;
+	height: 100%;
+}
+#header-nav ul .first a {
+	padding-bottom: 10px;
+	border-bottom: 1px solid white;
+}
+#fixed-ul>li>a:hover {
+	padding-bottom: 10px;
+	border-bottom: 1px solid white;
+} 
+#header-nav .nav li {
+	display: inline-block;
+	text-align: center;
+	line-height: 50px;
+	padding: 0 10px;
+	font-size: 13px;
+	font-weight: 500;
+}
+#header-nav .nav a {
+	color: white;
+	letter-spacing: 1px;
+}
+#header-nav .fixed-underul {
+	background-color: rgba(10,10,10,0.8);
+	z-index: 10;
+	position: absolute;
+	width: 100%;
+	left: 0;
+	display: none;
+}
+#header-nav .fixed-underul li {
+	display: inline-block;
+	font-size: 12px;
+	color: gray;
+	padding: 5px 20px;
+	font-weight: bold;
+	font-family: "微软雅黑";
+}
+#header-nav .fixed-underul li:hover {
+	color: white;
+}
+#header-nav .learn {
+	float: right;
+	margin-right: 80px;
+}
+#header-nav .learn li {
+	display: inline-block;
+	font-size: 13px;
+	color: white;
+	line-height: 50px;
+	margin-right: 20px;
+}
+#header-nav .learn a {
+	color: #fff;
+	padding-bottom: 5px;
+	line-height: 40px;
+}
+#header-nav .orige {
+	color: #DA5F4C;
+	font-size: 3px;
+	line-height: 10px;
+	
+}
+#header-nav .learn li i {
+	margin-right: 8px;
+}
+#header-nav .learn li>a:hover {
+	padding-bottom: 10px;
+	border-bottom: 1px solid white;
+}
+#header-nav .learn-pw {
+	position: absolute;
+	top: 20%;
+}
+#header-nav .learn-pb {
+	position: absolute;
+	top: 20%;
+	display: none;
+}
+#pw:hover .learn-pw {
+	display: none;
+}
+#pw:hover .learn-pb {
+	display: block;
+}
+#sw:hover .learn-sw {
+	display: none;
+}
+#sw:hover .learn-sb {
+	display: block;
+}
+#header-nav .learn-sw {
+	position: absolute;
+	top: 20%;
+}
+#header-nav .learn-sb {
+	position: absolute;
+	top: 20%;
+	display: none;
+}
+#nav {
+	width: 100%;
+	height: 40px;
+	background-color: #313131;
+	position: fixed;
+	/* top: 0; */
+	z-index: 10;
+}
+#nav::after {
+	height: 0;
+	content: "";
+	display: block;
+	clear: both;
+}
+#nav .rgt {
+	float: right;
+	margin-right: 100px;
+}
+#nav li {
+	float: left;
+	margin-right: 20px;
+	font-size: 13px;
+	color: white;
+	line-height: 40px;
+}
+#nav li i {
+	margin-right: 8px;
+}
+#nav .orige {
+	color: #DA5F4C;
+	font-size: 3px;
+	line-height: 38px;
+}
+#nav a {
+	color: #fff;
+	padding-bottom: 5px;
+}
+#nav a:hover {
+	border-bottom: 1px solid white;
+}
+#header {
+	width: 100%;
+	/* overflow: hidden; */
+	border-top: 1px solid white;
+	
+	z-index: 10;
+}
+#header .top {
+	margin-top: 70px;
+}
+#header .header-title {
+	font-weight: bold;
+	letter-spacing: 2.5px;
+	text-align: center;
+	font-size: 40px;
+}
+#header .header-title {
+	position: relative;
+}
+#header .per-w {
+	position: absolute;
+	right: 200px;
+	top: 20px;
+}
+#header .per-b {
+	position: absolute;
+	right: 200px;
+	top: 20px;
+	display: none;
+}
+#header .per-w:hover {
+	display: none;
+}
+#header .per-w:hover+.per-b {
+	display: block;
+}
+#header .shop-w {
+	position: absolute;
+	right: 130px;
+	top: 20px;
+}
+#header .shop-b {
+	position: absolute;
+	right: 130px;
+	top: 20px;
+	display: none;
+}
+#header .shop-w:hover {
+	display: none;
+}
+#header .shop-w:hover+.shop-b {
+	display: block;
+}
+#header .btm {
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 10px;
+	width: 100%;
+}
+#header .btm::after {
+	display: block;
+	clear: both;
+	height: 0;
+	content: "";
+}
+#header .btm ul {
+	margin: 0 auto 0;
+	
+}
+#header .btm ul::after {
+	display: block;
+	clear: both;
+	height: 0;
+	content: "";
+}
+#headernav {
+	display: flex;
+	justify-content: center;
+}
+#header .btm li {
+	/* float: left; */
+	padding: 10px 30px;
+	font-weight: 600;
+	font-size: 14px;
+	letter-spacing: 1.5px;
+}
+#header .btm ul .first a {
+	padding-bottom: 5px;
+	border-bottom: 3px solid black;
+}
+#header .btm li .hide {
+	width: 100%;
+	height: 100px;
+	background-color: pink;
+}
+#headernav {
+	position: relative;
+}
+#header .under-ul {
+	background-color: rgba(250,250,251,0.7);
+	z-index: 10;
+	position: absolute;
+	width: 100%;
+	top: 40px;
+	left: 0;
+	display: none;
+	margin-top: 10px;
+}
+#header .under-ul li {
+	float: none;
+	display: inline-block;
+	font-size: 12px;
+	color: gray;
+	padding: 20px 20px;
+	font-weight: bold;
+	font-family: "微软雅黑";
+}
+#header .under-ul li:hover {
+	color: black;
+}
+.banner {
+	margin-top: 10px;
+	z-index: 0;
+	position: relative;
+	width: 100%;
+	height: 600px;
+}
+#banner-img img {
+	float: left;
+}
+#banner-img ul li {
+	position: absolute;
+	display: none;
+}
+#banner-img ul .active {
+	display: block;
+}
+#btn-bottom {
+	position: absolute;
+	bottom: 60px;
+	left: 45%;
+	
+}
+#btn-bottom li {
+	display: inline-block;
+	width: 28px;
+	height: 5px;
+	border-radius: 5px;
+	background-color: gray;
+	margin-left: 8px;
+	/* padding: 10px; */
+}
+#btn-bottom .active {
+	background-color: black;
+}
+.floor1 {
+	margin-top: 50px;
+	/* background-color: pink; */
+}
+.floor2 {
+	margin-top: 100px;
+}
+.floor2 .content>div {
+	margin-top: 30px;
+}
+.floor2 .content>div>div {
+	float: left;
+	width: calc((100% - 64px) / 3);
+	margin-left: 32px;
+}
+.floor2 .content>div::after {
+	content: "";
+	display: block;
+	height: 0;
+	clear: both;
+}
+/* overflow: hidden;
+	text-overflow: ellipsis;带省略号
+	white-space:nowrap; 不让换行
+	隐藏文字外带省略号 
+*/
+.floor2 h4 {
+	width: 410px;
+	margin-top: 5px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space:nowrap; 
+}
+.floor2 h5 {
+	font-size: 13px;
+	color: #a0a0a0;
+	line-height: 1.5;
+	font-weight: 400;
+	margin-top: 5px;
+}
+.floor2 .pic:hover {
+	opacity: 0.7;
+	transition: 0.5s;
+}
+.floor3 {
+	margin-top: 100px;
+}
+.floor3 .container>div {
+	float: left;
+	width: calc((100% - 20px) / 2);
+	margin-right: 20px;
+	height: 415px;
+}
+.floor3 .container::after {
+	content: "";
+	display: block;
+	height: 0;
+	clear: both;
+}
+.floor3 .container .lft {
+	background: url(../img/floor301.jpg) no-repeat center center;
+	background-size: cover;
+}
+.floor3 .imgs>div {
+	float: left;
+	margin-left: 20px;
+}
+.floor3 .imgs::after {
+	clear: both;
+	display: block;
+	height: 0;
+	content: "";
+}
+.floor3 .lft:hover {
+	opacity: 0.7;	transition: 0.5s;
+}
+.floor3 img:hover {
+	opacity: 0.7;	transition: 0.5s;
+}
+.floor4 {
+	width: 100%;
+	height: auto;
+	background: url(../img/floor401.jpg) no-repeat center;
+	background-size: cover;
+	margin-top: 70px;
+}
+.floor4 .container {
+	width: 1200px;
+	padding: 50px 0;
+}
+.floor4 .container>div {
+	float: left;
+	margin-left: 20px;
+	width: calc((100% - 100px) / 6);
+	text-align: center;
+}
+.floor4 .container::after {
+	content: "";
+	display: block;
+	height: 0;
+	clear: both;
+}
+.floor4 .img {
+	margin:  0 auto;
+}
+.floor4 .logo1 .img {
+	width: 64px;
+	height: 64px;
+	background: url(../img/floor402.jpg);
+	background-position: 0 0;
+}
+.floor4 .logo2 .img {
+	width: 64px;
+	height: 64px;
+	background: url(../img/floor402.jpg);
+	background-position: -64px 0;
+}
+.floor4 .logo3 .img {
+	width: 64px;
+	height: 64px;
+	background: url(../img/floor402.jpg);
+	background-position: -128px 0;
+}
+.floor4 .logo4 .img {
+	width: 64px;
+	height: 64px;
+	background: url(../img/floor402.jpg);
+	background-position: -192px 0;
+}
+.floor4 .logo5 .img {
+	width: 64px;
+	height: 64px;
+	background: url(../img/floor402.jpg);
+	background-position: 192px 0;
+}
+.floor4 .logo6 .img {
+	width: 64px;
+	height: 64px;
+	background: url(../img/floor402.jpg);
+	background-position: 128px 0;
+}
+.floor4 .logo7 .img {
+	width: 64px;
+	height: 64px;
+	background: url(../img/floor402.jpg);
+	background-position: 64px 0;
+}
+.floor4 .container .small-word {
+	color: #fff;
+	font-size: 14px;
+	margin-top: 20px;
+	font-weight: 400;
+	letter-spacing: 1px;
+}
+.floor4 .container .big-word {
+	color: #fff;
+	font-size: 24px;
+	letter-spacing: 10px;
+}
+.floor4 .container .big-word span {
+	font-weight: bold;
+}
+.floor4 .container>div:hover {
+	opacity: 0.7;
+}
+.floor5 {
+	margin-top: 70px;
+}
+.floor5 .top>div {
+	float: left;
+	width: calc((100% - 45px) / 4);
+	margin-right: 15px;
+	height: 100%;
+}
+.floor5 .top::after {
+	height: 0;
+	display: block;
+	clear: both;
+	content: "";
+}
+.floor5 .top .four {
+	margin-right: 0;
+}
+
+.floor6 {
+	margin-top: 100px;
+}
+.floor7 {
+	margin-top: 100px;
+}
+.floor8 {
+	margin-top: 100px;
+}
+.floor9 {
+	margin-top: 100px;
+}
+.floor10 {
+	margin-top: 100px;
+}
+.floor11 {
+	margin-top: 100px;
+}
+.floor12 {
+	margin-top: 100px;
+}
+.floor13 {
+	margin-top: 100px;
+}
+.floor14 {
+	margin-top: 100px;
+}
+.floor14 .top {
+	margin-top: 30px;
+}
+.floor14 .top::after {
+	content: "";
+	display: block;
+	clear: both;
+	height: 0;
+}
+.floor14 .top>div {
+	float: left;
+	margin-left: 5px;
+	width: calc((100% - 20px) / 5);
+}
+.floor14 .btm {
+	text-align: center;
+}
+.floor14 .btm input {
+	width: 500px;
+	text-align: center;
+	background-color: white;
+	border: none;
+	height: 50px;
+	margin-top: 50px;
+	border: 2px solid black;
+	letter-spacing: 1px;
+}
+.floor14 .btm input:hover {
+	background-color: #000;
+	color: white;
+	border: 1px solid white;
+	transition: 0.3s;
+}
+.floor15 {
+	margin-top: 100px;
+}
+.floor15 .img {
+	margin-top: 30px;
+}
+.floor15 .img .hover-img:hover {
+	opacity: 0.6;
+	transition: 0.6s;
+}
+.floor15 .img>div {
+	float: left;
+	margin-left: 20px;
+	width: calc((100% - 20px) / 2);
+}
+.floor15 .word {
+	/* margin-top: 10px; */
+	padding: 20px 0 10px 10px;
+	font-weight: 700;
+	font-size: 15px;
+	letter-spacing: 1px;
+}
+.floor15 .img::after {
+	content: "";
+	clear: both;
+	display: block;
+	height: 0;
+}
+.floor15 .bt {
+	text-align: center;
+}
+.floor15 .bt input {
+	width: 500px;
+	text-align: center;
+	background-color: white;
+	border: none;
+	height: 50px;
+	margin-top: 50px;
+	border: 2px solid black;
+	letter-spacing: 1px;
+}
+.floor15 .bt input:hover {
+	background-color: #000;
+	color: white;
+	border: 1px solid white;
+	transition: 0.3s;
+}
+.side {
+	width: 70px;
+	border: 1px solid gray;
+	position: fixed;
+	right: 0;
+	bottom: 150px;
+	background-color: white;
+}
+#newpeople {
+	width: 70px;
+	height: 110px;
+	background: url(../img/newpeoplegift.png) no-repeat;
+	background-size: cover;
+}
+#downApp .img {
+	text-align: center;
+	width: 55px;
+	height: 55px;
+	background: url(../img/side.png);
+	background-position: 560px 0;
+}
+#customer .img {
+	width: 55px;
+	height: 55px;
+	background: url(../img/side.png);
+	background-position: 840px 0;
+}
+#getTop {
+	margin-bottom: 10px;
+	display: none;
+}
+#getTop .img {
+	width: 55px;
+	height: 55px;
+	background: url(../img/side.png);
+	background-position: 770px 0;
+}
+.side .content {
+	font-size: 12px;
+	text-align: center;
+	margin-top: 5px;
+	color: gray;
+	letter-spacing: 0.3px;
+	font-family: "黑体";
+}

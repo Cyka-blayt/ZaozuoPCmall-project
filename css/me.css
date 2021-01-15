@@ -1,0 +1,158 @@
+.person-nav {
+	border-bottom: 1px solid black;
+}
+.top .container {
+	position: relative;
+	padding: 70px 0;
+	border-bottom: 1px solid gray;
+}
+.top .user-head {
+	width: 99px;
+	background: url(../img/head-portrait.png) no-repeat center center;
+	background-size: cover;
+	height: 99px;
+	border-radius: 50%;
+	margin: 30px 30px 30px 50px;
+}
+.top .left {
+	width: 700px;
+	border-right: 1px solid gray;
+}
+.top .name {
+	position: absolute;
+	top: 45%;
+	left: 180px;
+	font-size: 13px;
+	letter-spacing: 1.5px;
+	color: #808080;
+}
+.top .name span {
+	font-weight: 700;
+	background-color: rgb(246, 246, 246);
+	border-radius: 25px;
+	padding: 3px 8px;
+}
+.top .right {
+	float: right;
+	width: 550px;
+}
+.top .right .word1 {
+	font-size: 17px;
+	font-weight: 300;
+	letter-spacing: 3px;
+}
+.top .right .imgs {
+	display: flex;
+	margin-top: 35px;
+}
+.top .right .imgs .email,.vx,.phone {
+	position: relative;
+	width: 40px;
+	margin-right: 30px;
+}
+.top .right .imgs .email img {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.top .right .imgs .vx img {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.top .right .imgs .green {
+	display: none;
+}
+.top .right .imgs>div:hover .green {
+	display: block;
+}
+.top .right span {
+	line-height: 60px;
+	color: green;
+	font-size: 14px;
+	letter-spacing: 1px;
+}
+.center  {
+	margin-top: 50px;
+}
+.center .word1 {
+	font-size: 29px;
+	font-weight: 300;
+	letter-spacing: 2px;
+}
+.center .add {
+	margin-top: 30px;
+	letter-spacing: 2px;
+}
+.center .add span {
+	border: 2px solid black;
+	border-radius: 25px;
+	padding: 10px 20px;
+}
+.center .add span:hover {
+	color: white;
+	background-color: #000000;
+	cursor: pointer;
+} 
+.bottom {
+	background: url(../img/mebanner.png) no-repeat center center;
+	background-size: cover;
+	width: 100%;
+	height: 300px;
+	margin-top: 50px;
+	overflow: hidden;
+}
+
+.bottom .word1 {
+	font-size: 29px;
+	font-weight: 300;
+	letter-spacing: 2px;
+	color: white;
+	margin-top: 50px;
+}
+.bottom .add {
+	margin-top: 100px;
+	letter-spacing: 2px;
+}
+.bottom .add span {
+	border-radius: 25px;
+	padding: 10px 20px;
+	color: white;
+	background-color: #60B688;
+}
+.bottom .add span:hover {
+	background-color: seagreen;
+}
+
+.side {
+	width: 70px;
+	border: 1px solid gray;
+	position: fixed;
+	right: 0;
+	bottom: 150px;
+	background-color: white;
+}
+#customer .img {
+	width: 55px;
+	height: 55px;
+	background: url(../img/side.png);
+	background-position: 840px 0;
+}
+#getTop {
+	margin-bottom: 10px;
+	display: none;
+}
+#getTop .img {
+	width: 55px;
+	height: 55px;
+	background: url(../img/side.png);
+	background-position: 770px 0;
+}
+.side .content {
+	font-size: 12px;
+	text-align: center;
+	margin-top: 5px;
+	color: gray;
+	letter-spacing: 0.3px;
+	font-family: "黑体";
+}

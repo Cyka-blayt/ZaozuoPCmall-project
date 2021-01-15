@@ -1,0 +1,512 @@
+* {
+	margin: 0;
+	padding: 0;
+	user-select: none;
+}
+body,
+html {
+	scroll-behavior: smooth;
+}
+li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+.container {
+	width: 1300px;
+	margin: 0 auto;
+}
+/* 框架 */
+.frame {
+	margin-top: 60px;
+	letter-spacing: 1px;
+}
+.frame>div {
+	float: left;
+	width: calc((100% - 45px) / 4);
+	margin-right: 15px;
+	height: 100%;
+}
+.frame .four {
+	margin-right: 0;
+}
+.content .name{
+	font-size: 17px;
+	font-weight: bold;
+	position: relative;
+	text-align: center;
+}
+.content .name span {
+	font-size: 8px;
+	position: absolute;
+	top: 0;
+}
+.content .money {
+	margin-top: 5px;
+	text-align: center;
+}
+.content .num {
+	font-weight: bold;
+}
+.tip::after {
+	content: "";
+	display: block;
+	height: 0;
+	clear: both;
+}
+.tip {
+	margin-top: 5px;
+}
+.tip ul {
+	display: flex;
+	justify-content: center;
+}
+.tip li {
+	font-size: 11px;
+	padding: 5px 8px;
+}
+.tip .pink {
+	color: #E86C71;
+	background-color: #FFEDED;
+	/* margin-right: 10px;
+	margin-left: 80px; */
+}
+.tip .gray {
+	background-color: #F6F6F6;
+	color: #9FA19F;
+}
+.frame::after {
+	content: "";
+	display: block;
+	height: 0;
+	clear: both;
+}
+/* 标题 */
+/* letter-spacing 设置字间距 */
+.title-b {
+	text-align: center;
+	font-weight: bold;
+	font-size: 27px;
+	letter-spacing: 2px;
+}
+.title-g {
+	text-align: center;
+	font-size: 13px;
+	color: #707070;
+	margin-top: 8px;
+	letter-spacing: 1px;
+}
+/* 图片显示效果 */
+.photo {
+	position: relative;
+}
+.hide {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+}
+.hide .boder {
+	width: 150px;
+	padding: 15px 8px;
+	font-size: 15px;
+	line-height: 21px;
+	text-align: center;
+	border: 6px solid #535353;
+	position: absolute;
+	top: 120px;
+	left: 65px;
+}
+.hide .title-en {
+	width: 300px;
+	text-align: center;
+	margin-top: 150px;
+	border-top: 1px solid gray;
+	position: absolute;
+	top: 180px;
+}
+.hide .title-en-b {
+	margin-top: 10px;
+	font-size: 16px;
+	font-weight: bold;
+}
+.hide .title-en-s {
+	font-size: 14px;
+}
+.photo:hover img {
+	opacity: 0.5;
+}
+.photo:hover .hide {
+	display: block;
+}
+.photo:hover+.content {
+	display: none;
+}
+.title {
+	font-weight: 700;
+	font-size: 20px;
+	letter-spacing: 2px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid gray;
+}
+.title::after {
+	content: "";
+	display: block;
+	clear: both;
+	height: 0;
+}
+.title .lft {
+	float: left;
+}
+.title .rgt {
+	float: right;
+}
+.title .rgt li {
+	float: left;
+	padding: 0 15px;
+	font-size: 14px;
+	font-weight: 500;
+	position: relative;
+}
+.title .rgt li span {
+	font-size: 8px;
+	position: absolute;
+	right: 0;
+	top: 3px;
+}
+.title .rgt li:hover {
+	opacity: 0.6;
+	cursor: pointer;
+}
+.four .frame-boder {
+	width: 150px;
+	height: 150px;
+	/* line-height: 120px; */
+	border: 8px solid #535353;
+	text-align: center;
+	margin-top: 100px;
+	margin-left: 80px;
+	font-size: 18px;
+	line-height: 2;
+}
+.four .frame-boder:hover {
+	opacity: 0.6;
+}
+/* 登录后的个人 */
+#user-nav {
+	position: absolute;
+	top: 30px;
+	left: -25px;
+	background-color: rgba(0,0,0,0.5);
+	display: none;
+}
+#user-nav li:hover {
+	background-color: rgba(0,0,0,0.8);
+}
+#header-nav .learn #user-nav a li {
+	width: 60px;
+	text-align: center;
+	margin-right: 0;
+	line-height: 1;
+	display: block;
+	padding: 10px;
+}
+
+.header-title #user-nav1 li {
+	width: 60px;
+	text-align: center;
+	display: block;
+	padding: 10px;
+	font-size: 12px;
+}
+.header-title #user-nav1 {
+	border: 1px solid gray;
+	position: absolute;
+	top: 10px;
+	right: 170px;
+	background-color: rgba(255,255,255,0.5);
+	z-index: 10;
+	display: none;
+}
+.header-title #user-nav1 li:hover {
+	background-color: rgba(250,250,250,0.8);
+}
+
+/* 顶部导航栏样式 */
+#header-nav {
+	background-color: #313131;
+	height: 50px;
+	position: fixed;
+	top: 0;
+	z-index: 100;
+	width: 100%;
+}
+#header-nav .img {
+	position: relative;
+	width: 30px;
+	height: 100%;
+	float: left;
+	margin-left: 60px;
+}
+#header-nav .img img {
+	position: absolute;
+	top: 20%;
+}
+#header-nav .nav {
+	float: left;
+	margin-left: 30px;
+	height: 100%;
+}
+#fixed-ul>li>a:hover {
+	padding-bottom: 10px;
+	border-bottom: 1px solid white;
+}
+#header-nav .nav li {
+	display: inline-block;
+	text-align: center;
+	line-height: 50px;
+	padding: 0 10px;
+	font-size: 13px;
+	font-weight: 500;
+}
+#header-nav .nav a {
+	color: white;
+	letter-spacing: 1px;
+}
+#fixed-ul .fixed-underul {
+	background-color: rgba(10,10,10,0.8);
+	z-index: 10;
+	position: absolute;
+	width: 100%;
+	left: 0;
+	display: none;
+}
+#header-nav .fixed-underul li {
+	display: inline-block;
+	font-size: 12px;
+	color: gray;
+	padding: 5px 20px;
+	font-weight: bold;
+	font-family: "微软雅黑";
+}
+#header-nav .fixed-underul li:hover {
+	color: white;
+}
+#header-nav .learn {
+	float: right;
+	margin-right: 80px;
+}
+#header-nav .learn li {
+	display: inline-block;
+	font-size: 13px;
+	color: white;
+	line-height: 50px;
+	margin-right: 20px;
+}
+#header-nav .learn a {
+	color: #fff;
+	padding-bottom: 5px;
+	line-height: 40px;
+}
+#header-nav .learn li i {
+	margin-right: 8px;
+}
+#header-nav .learn li>a:hover {
+	padding-bottom: 10px;
+	border-bottom: 1px solid white;
+}
+#header-nav .learn-pw {
+	position: absolute;
+	top: 20%;
+}
+#header-nav .learn-pb {
+	position: absolute;
+	top: 20%;
+	display: none;
+}
+#pw:hover .learn-pw {
+	display: none;
+}
+#pw:hover .learn-pb {
+	display: block;
+}
+#sw:hover .learn-sw {
+	display: none;
+}
+#sw:hover .learn-sb {
+	display: block;
+}
+#header-nav .learn-sw {
+	position: absolute;
+	top: 20%;
+}
+#header-nav .learn-sb {
+	position: absolute;
+	top: 20%;
+	display: none;
+}
+/* 我的主页顶部样式 */
+.person-nav {
+	margin-top: 50px;
+	background-color: rgb(246,246,246);
+}
+.person-nav ul {
+	margin-left: 105px;
+}
+.person-nav li {
+	display: inline-block;
+	padding: 20px 15px;
+	font-size: 13px;
+	letter-spacing: 2px;
+}
+
+/* 底部样式 */
+.footer {
+	background-color: #1B1B1B;
+	border-top: 1px solid #1B1B1B;
+	border-bottom: 1px solid #1B1B1B;
+	margin-top: 50px;
+}
+.footer .container-s {
+	width: 1200px;
+	/* background-color: pink; */
+	margin: 0 auto;
+}
+.footer .top {
+	display: flex;
+	justify-content: space-between;
+	padding: 80px 0 50px 0;
+	border-bottom: 1px solid white;
+}
+.footer .top .lft {
+	margin-right: 60px;
+}
+.footer .top .lft .img {
+	width: 200px;
+}
+.footer .top .lft .word {
+	color: white;
+	font-weight: bold;
+	margin-top: 8px;
+	/* font-family: buenosaires,sans-serif!important; */
+}
+.footer .top .lft .icon {
+	display: flex;
+	margin-top: 30px;
+}
+.footer .top .lft .icon>div {
+	width: 30px;
+	height: 30px;
+	border: 3px solid white;
+	border-radius: 50%;
+}
+.footer .top .lft .weixin-logo {
+	position: relative;
+	margin-right: 15px;
+}
+.footer .top .lft .weixin-logo>img {
+	position: absolute;
+	top: 20%;
+	left: 20%;
+}
+.footer .top .lft .xinlang-logo {
+	position: relative;
+}
+.footer .top .lft .xinlang-logo>img {
+	position: absolute;
+	top: 20%;
+	left: 20%;
+}
+.footer .top .lft .black {
+	display: none;
+}
+.footer .top .lft .icon>div:hover {
+	background-color: white;
+}
+.footer .top .lft .icon>div:hover .white {
+	display: none;
+}
+.footer .top .lft .icon>div:hover .black {
+	display: inline-block;
+}
+.footer .top .cet {
+	border-left: 1px solid white;
+	border-right: 1px solid white;
+	display: flex;
+	font-size: 13px;
+	justify-content: space-between;
+	padding: 0 40px;
+}
+.footer .top .cet>div {
+	padding: 0 40px;
+}
+.footer .top .cet>div>div {
+	color: #9CA0A0;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #9CA0A0;
+}
+.footer .top .cet>div li {
+	margin-top: 13px;
+}
+.footer .top .cet>div a {
+	color: #ccc;
+}
+.footer .top .cet>div a:hover {
+	color: #fff;
+}
+.footer .top .rgt .r-t {
+	color: #9CA0A0;
+	font-size: 13px;
+}
+.footer .top .rgt .num {
+	color: white;
+	font-size: 20px;
+	margin-top: 8px;
+}
+.footer .top .rgt .time {
+	font-size: 14px;
+}
+.footer .top .rgt .customer {
+	border: 1px solid white;
+	border-radius: 25px;
+	padding: 5px 12px;
+	display: inline-block;
+	margin-top: 12px;
+}
+.footer .top .rgt a {
+	font-size: 13spx;
+	color: white;
+}
+.footer .top .rgt .customer:hover {
+	background-color: white;
+	color: black;
+}
+.footer .top .rgt a:hover {
+	color: black;
+}
+.footer .top .rgt input {
+	width: 270px;
+	text-align: center;
+	background-color: white;
+	border: none;
+	height: 42px;
+	margin-top: 50px;
+	border: 1px solid black;
+}
+.footer .top .rgt input:hover {
+	background-color: #000;
+	color: white;
+	border: 1px solid white;
+}
+.footer .btm {
+	font-size: 13px;
+	color: #9CA0A0;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+.footer .btm>div {
+	margin-bottom: 10px;
+}

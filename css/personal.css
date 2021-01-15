@@ -1,0 +1,173 @@
+.username {
+}
+.username .container {
+	overflow: hidden;
+	position: relative;
+}
+.username .user-head {
+	width: 99px;
+	background: url(../img/head-portrait.png) no-repeat center center;
+	background-size: cover;
+	height: 99px;
+	border-radius: 50%;
+	margin: 30px 30px 30px 50px;
+}
+.username .phone {
+	position: absolute;
+	top: 45%;
+	left: 180px;
+	font-size: 17px;
+	font-weight: 700;
+	letter-spacing: 1.5px;
+}
+.username .learn-user {
+	position: absolute;
+	top: 45%;
+	right: 10px;
+	font-size: 17px;
+	font-weight: 600;
+	letter-spacing: 1.5px;
+	border: 1px solid gray;
+	padding: 5px 35px;
+	border-radius: 5px;
+}
+.username .learn-user:hover {
+	transition: 0.8s;
+	background-color: black;
+	color: white;
+	cursor: pointer;
+}
+.username .bottom {
+	background-color: rgb(246,246,246);
+	height: 10px;
+	border-radius: 5px;
+}
+.privilege {
+	margin-top: 50px;
+}
+.title {
+	text-align: center;
+	margin-bottom: 30px;
+	border-bottom: none;
+	font-size: 22px;
+}
+.privilege .container {
+	border: 1px solid #B8B8B8;
+	border-radius: 5px;
+	display: flex;
+	flex-wrap: wrap;
+}
+.privilege .content {
+	width: 325px;
+	height: 130px;
+	margin-top: 80px;
+	position: relative;
+}
+.privilege .content .price {
+	color: white;
+	background-color: #E56A69;
+	font-size: 15px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	padding: 5px;
+	border-radius: 25px;
+	position: absolute;
+	top: 0;
+	left: 60%;
+}
+.privilege .content .top {
+	text-align: center;
+	margin-top: 5px;
+	letter-spacing: 2px;
+	font-weight: bold;
+	font-size: 18px;
+}
+.privilege .content .btm {
+	text-align: center;
+	margin-top: 10px;
+	font-size: 14px;
+	color: #A5A5A5;
+}
+.improve-means {
+	margin-top: 50px;
+}
+.improve-means .content {
+	margin: 30px auto;
+	border: 1px solid #B8B8B8;
+	width: 630px;
+	margin: 0 auto;
+	padding: 40px 120px;
+}
+.improve-means .word1 {
+	font-size: 17px;
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+.improve-means .word2 {
+	font-size: 14px;
+	color: #A5A5A5;
+	letter-spacing: 1px;
+}
+.improve-means .word3 {
+	margin-top: 20px;
+}
+.improve-means .word3 li {
+	display: inline-block;
+	list-style: disc;
+	font-size: 14px;
+	color: grey;
+	margin-right: 15px;
+}
+.improve-means .word3 li::before {
+	content: '';
+	display: inline-block;
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	background-color: grey;
+	margin-right: 10px;
+}
+.improve-means a {
+	float: right;
+	color: white;
+	background-color: black;
+	border-radius: 25px;
+	padding: 10px 25px;
+	margin-top: 30px;
+	letter-spacing: 1px;
+}
+/* 订单 */
+
+
+.side {
+	width: 70px;
+	border: 1px solid gray;
+	position: fixed;
+	right: 0;
+	bottom: 150px;
+	background-color: white;
+}
+#customer .img {
+	width: 55px;
+	height: 55px;
+	background: url(../img/side.png);
+	background-position: 840px 0;
+}
+#getTop {
+	margin-bottom: 10px;
+	display: none;
+}
+#getTop .img {
+	width: 55px;
+	height: 55px;
+	background: url(../img/side.png);
+	background-position: 770px 0;
+}
+.side .content {
+	font-size: 12px;
+	text-align: center;
+	margin-top: 5px;
+	color: gray;
+	letter-spacing: 0.3px;
+	font-family: "黑体";
+}
